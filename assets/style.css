@@ -3,3 +3,16 @@
     margin: 0;
     padding: 0;
 }
+
+h1{
+    display: block;
+}
+
+.social .social-icon{
+    display: block;
+}
+
+.move-down-btn{
+    display: block;
+    /*maybe überflüssig - auch im html*/
+}
