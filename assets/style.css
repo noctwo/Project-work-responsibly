@@ -2,17 +2,153 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+:-webkit-any(article, aside, nav, section) h1 {
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+header, main, footer{
+    width: 75vw;
+    background-color: #edecec;
+    margin: 0 auto;
+}
+
+nav{
+    display: inline-block;
+    padding: 2em 0 0 4em;
+}
+
+nav a{
+    color: #659D89;
+    padding-right: 0.5em;
+    font-weight: 300;
+}
+
+.hero{
+    padding: 6em 4em;
+    border-bottom: 1px solid #ccc;
 }
 
 h1{
-    display: block;
+    font-size: 3rem;
+    font-weight: 300;
+    width: 40vw;
+    max-width: 570px;
+    line-height: 3.2rem;
 }
 
-.social .social-icon{
+h1::first-line{
+    color: #659D89;
+}
+
+.social{
+    float: right;
     display: block;
+    padding: 2em 0;
+}
+
+.social-icon{
+    width: 2em;
+    height: 2em;
+}
+
+.si-twitter{
+    background-image: url(img/twitter-512px.png);
+}
+
+.si-fb{
+    background-image: url(img/fb-512px.png);
+}
+
+.si-insta{
+    background-image: url(img/insta-512px.png);
+}
+.si-twitter, .si-fb, .si-insta{
+background-size: 100%;
 }
 
 .move-down-btn{
-    display: block;
-    /*maybe überflüssig - auch im html*/
+    clear:both;
 }
+
+.move-down-btn a{
+    color: #666;
+}
+
+.move-down-btn a::before{
+    content: "↓ ";
+}
+
+.service, .feature-wrapper{
+    padding: 0 4em;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+hgroup{
+    margin: 4em 0;
+}
+
+.service{
+    border-bottom: 1px solid #ccc;
+}
+
+.service-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    margin-bottom: 6em;
+}
+
+.service-container{
+    display: flex;
+    width: 17em;
+    height: 12em;
+}
+
+.sc-one, .sc-two, .sc-three, .sc-four, .sc-five, .sc-six{
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.sc-one{
+    background-image: url(img/link1.gif.gif);
+}
+
+.sc-two{
+    background-image: url(img/link2.gif.gif);
+}
+
+.sc-three{
+    background-image: url(img/link3.gif.gif);
+}
+
+.sc-four{
+    background-image: url(img/link4.gif.gif);
+}
+
+.sc-five{
+    background-image: url(img/link5.gif.gif);
+}
+
+.sc-six{
+    background-image: url(img/link6.gif.gif);
+}
+
+.feature img{
+    border-radius: 5px;
+    max-width: 40vw;
+}
+
+
