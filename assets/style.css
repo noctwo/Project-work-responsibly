@@ -94,6 +94,15 @@ background-size: 100%;
     padding: 1em 2em;
     text-align: center;
     background-color: #659D89;
+    border-radius: 25px;
+}
+
+.move-down-btn:hover{
+    -webkit-box-shadow: 10px 10px 33px -13px rgba(102,102,102,0.34);
+    -moz-box-shadow: 10px 10px 33px -13px rgba(102,102,102,0.34);
+    box-shadow: 10px 10px 33px -13px rgba(102,102,102,0.34);
+    cursor: pointer;
+    background-color: #3d6e5d;
 }
 
 .move-down-btn a{
@@ -180,7 +189,7 @@ hgroup{
 }
 
 .feature img{
-    border-radius: 5px;
+    border-radius: 10px;
     max-width: 40vw;
     margin-bottom: 2em;
 }
