@@ -223,11 +223,16 @@ figcaption, .feature-author{
 footer{
     text-align: center;
     color: #666;
-    padding: 4em 0;
+    padding: 4em 0 2em 0;
 }
 
 footer a::before{
     content: "⬆ ";
+}
+
+footer a{
+    display: block;
+    margin-bottom: 5em;
 }
 
 @media (max-width: 650px){
