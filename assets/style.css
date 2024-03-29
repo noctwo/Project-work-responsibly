@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    font-size: 1rem;
 }
 
 :-webkit-any(article, aside, nav, section) h1 {
@@ -16,6 +17,7 @@ a{
 
 header, main, footer{
     width: 75vw;
+    max-width: 1200px;
     background-color: #edecec;
     margin: 0 auto;
 }
@@ -29,6 +31,12 @@ nav a{
     color: #659D89;
     padding-right: 0.5em;
     font-weight: 300;
+}
+
+nav a:hover{
+    color: #3d6e5d;
+    font-weight: 400;
+    cursor: pointer;
 }
 
 .hero{
@@ -54,9 +62,15 @@ h1::first-line{
     padding: 2em 0;
 }
 
+.social-icon:hover{
+    filter: none;
+    cursor: pointer;
+}
+
 .social-icon{
     width: 2em;
     height: 2em;
+    filter: grayscale();
 }
 
 .si-twitter{
@@ -76,10 +90,14 @@ background-size: 100%;
 
 .move-down-btn{
     clear:both;
+    width: 18em;
+    padding: 1em 2em;
+    text-align: center;
+    background-color: #659D89;
 }
 
 .move-down-btn a{
-    color: #666;
+    color: #fff;
 }
 
 .move-down-btn a::before{
@@ -113,13 +131,24 @@ hgroup{
 
 .service-container{
     display: flex;
+    flex: 1 0 30%;
     width: 17em;
     height: 12em;
 }
 
+.service-container:hover{
+    -webkit-box-shadow: 10px 10px 33px -13px rgba(102,102,102,0.34);
+    -moz-box-shadow: 10px 10px 33px -13px rgba(102,102,102,0.34);
+    box-shadow: 10px 10px 33px -13px rgba(102,102,102,0.34);
+    cursor: pointer;
+}
+
 .sc-one, .sc-two, .sc-three, .sc-four, .sc-five, .sc-six{
     background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 5px;
+    mix-blend-mode: multiply;
 }
 
 .sc-one{
@@ -146,9 +175,76 @@ hgroup{
     background-image: url(img/link6.gif.gif);
 }
 
+.feature{
+    margin-bottom: 3em;
+}
+
 .feature img{
     border-radius: 5px;
     max-width: 40vw;
+    margin-bottom: 2em;
 }
 
+.feature img:hover{
+    -webkit-box-shadow: 10px 10px 33px -13px rgba(102,102,102,0.80);
+    -moz-box-shadow: 10px 10px 33px -13px rgba(102,102,102,0.80);
+    box-shadow: 10px 10px 33px -13px rgba(102,102,102,0.80);
+    cursor: pointer;
+}
 
+figcaption, figure > p{
+    text-align: center;
+}
+
+.feature-wrapper{
+    display: grid;
+    border-bottom: 1px solid #ccc;
+}
+
+.feature-right{
+    justify-self: end;
+}
+
+.feature-left{
+    justify-self: start;
+}
+
+figcaption, .feature-author{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.feature-title{
+    font-size: 1.1rem;
+}
+
+footer{
+    text-align: center;
+    color: #666;
+    padding: 4em 0;
+}
+
+footer a::before{
+    content: "⬆ ";
+}
+
+@media (max-width: 650px){
+
+    h1{
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+    }
+
+    .service-container{
+        width: 12em;
+        height: 6em;
+    }
+
+    .move-down-btn{
+        width: 10em;
+        padding: 0.5em 1em;
+    }
+
+}
