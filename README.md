@@ -21,7 +21,7 @@
 
 
 ## Features
-List the ready features here:
+
 - Hover-Effects
 - Working Anchor-Buttons (Features in menu, Hero-Button, Back to top button)
 - Small Design upgrades
