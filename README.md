@@ -1,4 +1,4 @@
-# Project Name
+# Work Responsibly
 > First SuperCode Project - HTML & CSS Landingpage.
 > Live demo [_here_](https://noctwo.github.io/Project-work-responsibly/). <!-- If you have the project hosted somewhere, include the link here. -->
 
